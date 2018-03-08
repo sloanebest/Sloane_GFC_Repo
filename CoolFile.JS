@@ -4,4 +4,6 @@ var Billy = 2
 if Tony < Billy {
     set.Tony(0)
 }
-else console.log(fun)
+else console.log(fun times)
+
+//added console log command
