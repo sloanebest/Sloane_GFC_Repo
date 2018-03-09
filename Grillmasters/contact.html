@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+</head>
+<body>
+        <div id="title">
+                <h1 align="center">Grillmasters</h1>
+            </div>
+            <hr noshade size="3" />
+        
+            <div id="navigation">
+        <p><a href="index.html">Home</a>&emsp;&emsp;<a href="menu.html">Menu</a>&emsp;&emsp;<a href="contact.html">Contact Us</a></p>        
+                    
+            </div>
+            <hr noshade size="3" />
+        <br />
+
+        <div id="contactForm" align="middle">
+
+        <form action="submit.html" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br /><br />
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br /><br />
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone"><br /><br />
+            <label for="reason">Reason for Inquiry:</label>
+            <select id="reason" name="reason">
+                <option value="default" selected>Catering</option>
+                <option value="privateParty">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select>
+            <br />
+            <br />
+            <label for="additionalInfo">Additional Information:</label>
+            <textarea id="additionalInfo"></textarea>
+            <br />
+            <br />
+            <label for="haveYouBeen">Have you been to the restaurant?</label>
+            <input type="radio" id="choice1" name="haveYouBeen" value="yes">
+            <label for="choice1">Yes</label>
+            <input type="radio" id="choice2" name="haveYouBeen" value="no">
+            <label for="choice2">No</label>
+            <br />
+            <br />
+            <label for="bestDays">Best days to contact you:</label>
+
+            <input type="checkbox" id="m" name="bestDays" value="m">
+            <label for="m">M</label>
+            <input type="checkbox" id="t" name="bestDays" value="t">
+            <label for="t">T</label>  
+            <input type="checkbox" id="w" name="bestDays" value="w">
+            <label for="w">W</label>
+            <input type="checkbox" id="th" name="bestDays" value="th">
+            <label for="th">Th</label>
+            <input type="checkbox" id="f" name="bestDays" value="f">
+            <label for="f">F</label><br />     
+        <br />
+        <input type="submit" name="submit" value="Submit">
+        </form>
+        </div>
+
+        <div id="footer" align="middle">
+                
+                    <hr noshade size="3" />
+                    <footer>
+                        <p>428 Prospect Pl, Carmel, CA, 95432</p>
+                        <p>213-440-4040</p>
+                    </footer>
+                
+        </div>
+</body>
+</html>
