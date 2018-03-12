@@ -1,93 +1,163 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <title>Menu</title>
+
+<link href="restaurantStyles.css" rel="stylesheet" type="text/css">
+
+<style>
+    #menu-table table{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #D3C3C3; 
+    background-blend-mode:  
+    }
+
+    #menu-table table, th, td, tr{
+        border: 2px;
+        border-color: rgb(54, 53, 53);
+        border-style: solid;
+        border-spacing: 0px;
+    }
+    #menu-table td{
+        text-align: center;
+    }
+
+    #menu-table h3{
+        font-style: italic; 
+    }
+</style>
+
 </head>
 <body>
-        <div id="title">
-                <h1 align="middle">Grillmasters</h1>
-            </div>
-            <hr noshade size="3" />
+    <div class="title"> 
+        <h1>Grillmasters</h1>
+    </div>
+<hr />       
+
+<div class="navigation"> 
+ 
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact Us</a>
+                                
+</div>
+                        
+<div class="mid-bg">
+<hr />
         
-            <div id="navigation">
-        <p><a href="index.html">Home</a>&emsp;&emsp;<a href="menu.html">Menu</a>&emsp;&emsp;<a href="contact.html">Contact Us</a></p>        
-                    
-            </div>
-            <hr noshade size="3" />
+    <div id="menu-table"> 
+
+        <table>
+            <tr>
+                <td>
+                    <h3>Bugers and Fries</h3>
+                    <p>An American Classic!<br />
+                    Your choice - with or without cheese<br />
+                    Pickle, onion, tomato and lettuce<br />
+                    Served with our famous thick cut<br />
+                    french fries<br />
+                    $7.95</p>
+                </td>
+                <td>
+                    <h3>Hot Dog and Chips</h3>
+                    <p>A Summer Classic!<br />
+                    Your choice - white or wheat bun<br />
+                    Relish, mustard and ketchup<br />
+                    Served with our house made chips<br />
+                    $7.95</p><br />
+                </td>
+                <td>
+                    <h3>Italian Sausage and Peppers</h3>
+                    <p>An All-Time Favorite!!<br />
+                    Your choice - mild or spicy<br />
+                    Cole Slaw<br />
+                    Served with garlic mashers<br />                           
+                    $10.95</p>
+
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Tenderloin Sandwich and Chips</h3>
+                    <p>Really Hits the Spot!<br />
+                    Plain or Sesame Seed Bun<br />
+                    Pickle, onion, tomato and lettuce<br />
+                    Served with our house made chips<br />                            
+                    $8.95</p>
+                    <br />
+                </td>
+                <td>
+                    <h3>House Salad</h3>
+                    <p>On the Lighter Side<br />
+                    Your choice - with or without cheese<br />
+                    Iceburg lettuce, tomatoes, peppers<br />
+                    Thousand Island or Ranch dressing<br />
+                    Served with a dinner roll<br />
+                    $6.95</p>
+                </td>
+                <td>
+                    <h3>Bugers and Fries</h3>
+                    <p>A Taste of Texas!<br />
+                    Smoked Brisket on thick-cut Texas Toast<br />
+                    Cole Slaw<br />
+                    Served with our famous thick-cut french fries<br />
+                    $7.95</p>
+                    <br />
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="3" style="padding: 20px; font-size: 36px; font-weight: bold;">
+                        Beverages
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3>Root Beer</h3>
+                </td>
+                <td>$3.00</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3>Bottled Water</h3>
+                </td>
+                <td>$1.25</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3>Lemonade</h3>
+                </td>
+                <td>$1.00</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3>Iced Tea</h3>
+                </td>
+                <td>$1.25</td>
+            </tr>
+        </table>
         
+    </div>
+<hr />
+</div>
 
-        <div id="menuTable" align="middle">
-
-            <table>
-                <tr>
-                    <td>
-                        <h3 align="middle">Bugers and Fries</h3>
-                        <p align="middle">An American Classic!<br />
-                        Your choice - with or without cheese<br />
-                        Pickle, onion, tomato and lettuce<br />
-                        Served with our famous thick cut<br />
-                        french fries<br />
-                        $7.95</p>
-                    </td>
-                    <td>
-                            <h3 align="middle">Hot Dog and Chips</h3>
-                            <p align="middle">A Summer Classic!<br />
-                            Your choice - white or wheat bun<br />
-                            Relish, mustard and ketchup<br />
-                            Served with our house made chips<br />
-                            $7.95</p><br />
-                    </td>
-                    <td>
-                            <h3 align="middle">Italian Sausage and Peppers</h3>
-                            <p align="middle">An All-Time Favorite!!<br />
-                            Your choice - mild or spicy<br />
-                            Cole Slaw<br />
-                            Served with garlic mashers<br />                           
-                            $10.95</p>
-                            <br />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                            <h3 align="middle">Tenderloin Sandwich and Chips</h3>
-                            <p align="middle">Really Hits the Spot!<br />
-                            Plain or Sesame Seed Bun<br />
-                            Pickle, onion, tomato and lettuce<br />
-                            Served with our house made chips<br />                            
-                            $8.95</p>
-                            <br />
-                    </td>
-                    <td>
-                            <h3 align="middle">House Salad</h3>
-                            <p align="middle">On the Lighter Side<br />
-                            Your choice - with or without cheese<br />
-                            Iceburg lettuce, tomatoes, peppers<br />
-                            Thousand Island or Ranch dressing<br />
-                            Served with a dinner roll<br />
-                            $6.95</p>
-                    </td>
-                    <td>
-                            <h3 align="middle">Bugers and Fries</h3>
-                            <p align="middle">A Taste of Texas!<br />
-                            Smoked Brisket on thick-cut Texas Toast<br />
-                            Cole Slaw<br />
-                            Served with our famous thick-cut french fries<br />
-                            $7.95</p><br />
-                    </td>
-
-                </tr>
-            </table>
-
-        </div>
-
-        <div id="footer" align="middle">
+<div class="footer">
+ 
+    <footer>
+        <p>428 Prospect Pl, Carmel, CA, 95432</p>
+        <p>213-440-4040</p>
+    </footer>
                 
-                    <hr noshade size="3" />
-                    <footer>
-                        <p>428 Prospect Pl, Carmel, CA, 95432</p>
-                        <p>213-440-4040</p>
-                    </footer>
-                
-        </div>
+</div>
+
 </body>
+
 </html>

@@ -1,31 +1,102 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <title>Contact</title>
-</head>
-<body>
-        <div id="title">
-                <h1 align="middle">Grillmasters</h1>
-            </div>
-            <hr noshade size="3" />
+
+<link href="restaurantStyles.css" rel="stylesheet" type="text/css">
+
+<style>
+    #contact-form{
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 40%;
+        padding: 20px;
+        border: 4px solid #000000;
+    }
+    
+    input[type=text] {
+        background-color: 		#d5d2cb;
+        border:		2px	solid	#292533;
+        width:		100%;
+        padding:	10px;
+        margin:		auto;
+        box-sizing:	border-box;
+        font-size: 16px;
+    }
+    select {
+        background-color:	#d5d2cb;
+        width:	60%;
+        padding: 5px;
+        margin:	auto;
+        box-sizing:	border-box;
+        border:		2px	solid	#292533;
+        font-size: 16px;
+    }
+    textarea {
+        width: 100%;
+        height: 200px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #000000;
+        border-radius: 3px;
+        background-color: #d5d2cb;
+        resize: none;
+        font-size: 16px;
+    }
+
+    input[type=submit]{
+        background-color: #8c2238;
+        border: none;
+        color: white;
+        padding: 12px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    input[type=radio]{
+        border: 2px solid #000000;
+    }
         
-            <div id="navigation">
-        <p><a href="index.html">Home</a>&emsp;&emsp;<a href="menu.html">Menu</a>&emsp;&emsp;<a href="contact.html">Contact Us</a></p>        
-                    
-            </div>
-            <hr noshade size="3" />
-        <br />
+</style>
 
-        <div id="contactForm" align="middle">
+</head>
 
-        <form action="submit.html" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br /><br />
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email"><br /><br />
-            <label for="phone">Phone:</label>
-            <input type="text" id="phone" name="phone"><br /><br />
-            <label for="reason">Reason for Inquiry:</label>
+<body>
+    <div class="title">
+        <h1>Grillmasters</h1>
+     </div>
+<hr />
+
+<div class="navigation">
+
+
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact Us</a>      
+                                
+</div>
+            
+<div class="mid-bg"> 
+<hr />
+<br />
+
+<div id="contact-form">
+
+    <form action="submit.html" method="POST">
+        <label for="name" style="font-weight: bold;">Name:</label>
+        <input type="text" id="name" name="name" required><br /><br />
+        <label for="email" style="font-weight: bold;">Email:</label>
+        <input type="text" id="email" name="email" required><br /><br />
+        <label for="phone" style="font-weight: bold;">Phone:</label>
+        <input type="text" id="phone" name="phone" required><br /><br />
+        <label for="reason">Reason for Inquiry:</label>
             <select id="reason" name="reason">
                 <option value="default" selected>Catering</option>
                 <option value="privateParty">Private Party</option>
@@ -57,19 +128,22 @@
             <label for="th">Th</label>
             <input type="checkbox" id="f" name="bestDays" value="f">
             <label for="f">F</label><br />     
-        <br />
+            <br />
         <input type="submit" name="submit" value="Send Request">
-        </form>
-        </div>
+    </form>
 
-        <div id="footer" align="middle">
+</div>
+
+<hr />
+</div>
+
+<div class="footer">
+    <footer>
+        <p>428 Prospect Pl, Carmel, CA, 95432</p>
+        <p>213-440-4040</p>
+    </footer>
                 
-                    <hr noshade size="3" />
-                    <footer>
-                        <p>428 Prospect Pl, Carmel, CA, 95432</p>
-                        <p>213-440-4040</p>
-                    </footer>
-                
-        </div>
+</div>
+
 </body>
 </html>

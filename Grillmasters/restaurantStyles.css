@@ -1,0 +1,62 @@
+.title {
+	color: #111; 
+	font-family: 'Helvetica Neue', sans-serif; 
+	font-size: 30px; 
+	font-weight: bold; 
+	letter-spacing: -1px; 
+	line-height: 0; 
+	text-align: center;
+	
+}
+
+.footer {
+	text-align: center;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 15px;	
+}
+
+.navigation a{
+	font-family: 'Helvetica Neue', sans-serif;
+	padding-right: 60px;
+	padding-left: 10px;		
+	font-size: 24px;
+}
+
+.navigation{
+	padding-bottom: 20px;
+	padding-top: 20px;	
+	width: 100%;		
+}
+
+.navigation a:link{
+	color: blue;
+}
+.navigation a:visited{
+	color: #424141;
+}
+
+.navigation a:hover{
+	font-weight: bold;
+}
+
+.navigation a:active{
+	text-decoration: none;
+}
+
+hr {
+	border-top: 2px solid #000000;
+	border-bottom: 1px solid #000000;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;	
+}
+
+#home-description {
+	text-align: center;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 20px;
+}
+
+.mid-bg{
+	background-color: #D39E9E;
+}
