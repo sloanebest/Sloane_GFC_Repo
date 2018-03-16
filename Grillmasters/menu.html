@@ -5,7 +5,19 @@
 
 <title>Menu</title>
 
-<link href="restaurantStyles.css" rel="stylesheet" type="text/css">
+<link href="restaurantStyles.css" rel="stylesheet" type="text/css"> 
+
+<!-- Latest compiled and minified CSS--> 
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+
+<!-- Optional theme 
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>-->
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+</script>
 
 <style>
     #menu-table table{
@@ -15,8 +27,7 @@
     margin-bottom: 8px;
     margin-top: 8px;
     font-family: 'Helvetica Neue', sans-serif;
-    background-color: #D3C3C3; 
-    background-blend-mode:  
+    background-color: #D3C3C3;     
     }
 
     #menu-table table, th, td, tr{
@@ -37,116 +48,130 @@
 </head>
 <body>
     <div class="title"> 
-        <h1>Grillmasters</h1>
+        <h1 style="font-size: 60px; text-align: center;">Grillmasters</h1>
     </div>
-<hr />       
+<hr style="border-top: 2px solid #000000;
+border-bottom: 1px solid #000000;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-right: 0px;"	/>    
 
-<div class="navigation"> 
- 
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="contact.html">Contact Us</a>
-                                
+<div class="navigation">
+
+    <ul class="nav nav-pills">
+        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li class="active"><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>     
+
 </div>
                         
 <div class="mid-bg">
-<hr />
+<hr style="border-top: 2px solid #000000;
+border-bottom: 1px solid #000000;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-right: 0px;"	/>  
         
     <div id="menu-table"> 
+        <div class="container-fluid">
+            <table class="table">
+                <tr>
+                    <td>
+                        <h3>Bugers and Fries</h3>
+                        <p>An American Classic!<br />
+                        Your choice - with or without cheese<br />
+                        Pickle, onion, tomato and lettuce<br />
+                        Served with our famous thick cut<br />
+                        french fries<br />
+                        $7.95</p>
+                    </td>
+                    <td>
+                        <h3>Hot Dog and Chips</h3>
+                        <p>A Summer Classic!<br />
+                        Your choice - white or wheat bun<br />
+                        Relish, mustard and ketchup<br />
+                        Served with our house made chips<br />
+                        $7.95</p><br />
+                    </td>
+                    <td>
+                        <h3>Italian Sausage and Peppers</h3>
+                        <p>An All-Time Favorite!!<br />
+                        Your choice - mild or spicy<br />
+                        Cole Slaw<br />
+                        Served with garlic mashers<br />                           
+                        $10.95</p>
 
-        <table>
-            <tr>
-                <td>
-                    <h3>Bugers and Fries</h3>
-                    <p>An American Classic!<br />
-                    Your choice - with or without cheese<br />
-                    Pickle, onion, tomato and lettuce<br />
-                    Served with our famous thick cut<br />
-                    french fries<br />
-                    $7.95</p>
-                </td>
-                <td>
-                    <h3>Hot Dog and Chips</h3>
-                    <p>A Summer Classic!<br />
-                    Your choice - white or wheat bun<br />
-                    Relish, mustard and ketchup<br />
-                    Served with our house made chips<br />
-                    $7.95</p><br />
-                </td>
-                <td>
-                    <h3>Italian Sausage and Peppers</h3>
-                    <p>An All-Time Favorite!!<br />
-                    Your choice - mild or spicy<br />
-                    Cole Slaw<br />
-                    Served with garlic mashers<br />                           
-                    $10.95</p>
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Tenderloin Sandwich and Chips</h3>
+                        <p>Really Hits the Spot!<br />
+                        Plain or Sesame Seed Bun<br />
+                        Pickle, onion, tomato and lettuce<br />
+                        Served with our house made chips<br />                            
+                        $8.95</p>
+                        <br />
+                    </td>
+                    <td>
+                        <h3>House Salad</h3>
+                        <p>On the Lighter Side<br />
+                        Your choice - with or without cheese<br />
+                        Iceburg lettuce, tomatoes, peppers<br />
+                        Thousand Island or Ranch dressing<br />
+                        Served with a dinner roll<br />
+                        $6.95</p>
+                    </td>
+                    <td>
+                        <h3>Bugers and Fries</h3>
+                        <p>A Taste of Texas!<br />
+                        Smoked Brisket on thick-cut Texas Toast<br />
+                        Cole Slaw<br />
+                        Served with our famous thick-cut french fries<br />
+                        $7.95</p>
+                        <br />
+                    </td>
 
-                    <br />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h3>Tenderloin Sandwich and Chips</h3>
-                    <p>Really Hits the Spot!<br />
-                    Plain or Sesame Seed Bun<br />
-                    Pickle, onion, tomato and lettuce<br />
-                    Served with our house made chips<br />                            
-                    $8.95</p>
-                    <br />
-                </td>
-                <td>
-                    <h3>House Salad</h3>
-                    <p>On the Lighter Side<br />
-                    Your choice - with or without cheese<br />
-                    Iceburg lettuce, tomatoes, peppers<br />
-                    Thousand Island or Ranch dressing<br />
-                    Served with a dinner roll<br />
-                    $6.95</p>
-                </td>
-                <td>
-                    <h3>Bugers and Fries</h3>
-                    <p>A Taste of Texas!<br />
-                    Smoked Brisket on thick-cut Texas Toast<br />
-                    Cole Slaw<br />
-                    Served with our famous thick-cut french fries<br />
-                    $7.95</p>
-                    <br />
-                </td>
-
-            </tr>
-            <tr>
-                <td colspan="3" style="padding: 20px; font-size: 36px; font-weight: bold;">
-                        Beverages
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <h3>Root Beer</h3>
-                </td>
-                <td>$3.00</td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <h3>Bottled Water</h3>
-                </td>
-                <td>$1.25</td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <h3>Lemonade</h3>
-                </td>
-                <td>$1.00</td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <h3>Iced Tea</h3>
-                </td>
-                <td>$1.25</td>
-            </tr>
-        </table>
-        
+                </tr>
+                <tr>
+                    <td colspan="3" style="padding: 20px; font-size: 36px; font-weight: bold;">
+                            Beverages
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Root Beer</h3>
+                    </td>
+                    <td>$3.00</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Bottled Water</h3>
+                    </td>
+                    <td>$1.25</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Lemonade</h3>
+                    </td>
+                    <td>$1.00</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Iced Tea</h3>
+                    </td>
+                    <td>$1.25</td>
+                </tr>
+            </table>
+        </div>
     </div>
-<hr />
+<hr style="border-top: 2px solid #000000;
+border-bottom: 1px solid #000000;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-right: 0px;"	/>
 </div>
 
 <div class="footer">

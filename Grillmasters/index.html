@@ -4,29 +4,101 @@
 
     <title>Home Page</title>
 
-    <link href="restaurantStyles.css" rel="stylesheet" type="text/css">  
+        <link href="restaurantStyles.css" rel="stylesheet" type="text/css">
 
+        <!-- Latest compiled and minified CSS--> 
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+
+        <!-- Optional theme 
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        
+        </script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+
+        </script>
+        <noscript>
+            <div class="alert alert-warning">
+            Unfortunately your browser does not support JavaScript or JavaScript is currently disabled
+            </div>
+        </noscript>   
+       
+    
     </head>
 
 <body>
 
     <div class="title">
-        <h1>Grillmasters</h1>
+        <h1 style="font-size: 60px; text-align: center;">Grillmasters</h1>
     </div>
-<hr /> 
+<hr style="border-top: 2px solid #000000;
+border-bottom: 1px solid #000000;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-right: 0px;"	/> 
 
 <div class="navigation">
-    
 
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="contact.html">Contact Us</a>     
+    <ul class="nav nav-pills">
+        <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>     
 
 </div>
-
+</body>
+</body>
 <div class="mid-bg">  
-<hr />
+<hr style="border-top: 2px solid #000000;
+border-bottom: 1px solid #000000;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-right: 0px;"	/> 
 
+
+<div class="container">
+        <div class="jumbotron" style="background-color: rgb(202, 196, 196); margin-bottom: 5px">
+                <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                        <!--<ol class="carousel-indicators">
+                                <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#homeCarousel" data-slide-to="1"></li>
+                                <li data-target="#homeCarousel" data-slide-to="2"></li>
+                            </ol>-->
+                    
+                        <div class="carousel-inner">
+                
+                            <div class="item active">
+                            <p class="text-center" style="color: green; font-style: italic;">We're opening a new location!</p>
+                            </div>
+                            
+                            <div class="item">
+                                <p class="text-center" style="color: green; font-style: italic;">We're rolling out our seasonal menu, with special options for this season.</p>
+                            </div>
+                            
+                            <div class="item">
+                                <p class="text-center" style="color: green; font-style: italic;">The Drink of the Month is SG Special Brew.</p>
+                            </div>
+                
+                        </div>
+                
+                        <a class="left carousel-control" href="#homeCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#homeCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                        </a>
+                </div>    
+            <!--<p style="color: green; font-style: italic;">New location coming soon to Washington!!!</p>--> 
+        </div>
+</div>
+<div class="container">
     <div id="home-photo">
 
         <img src="images/restaurant.jpeg" 
@@ -34,11 +106,14 @@
         style="display: block; 
         margin-left: auto; 
         margin-right: auto;
-        margin-top: 20px; 
+        margin-top: 10px; 
+        margin-bottom: 10px;
         width: 40%; 
         border-radius: 5%;">
     </div>
+</div>
 
+<div class="container">
     <div id="home-description">
         <p>Grillmasters understands the value of properly prepared meats and sides.<br /> 
         All of our meat selections are marinated under the strictest conditions and<br /> 
@@ -46,8 +121,13 @@
         <br />
         <em>Here you will also find best-in-class spirits and appetizers.</em></p>
     </div>
+</div>
 
-<hr />
+<hr style="border-top: 2px solid #000000;
+border-bottom: 1px solid #000000;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-right: 0px;"	/> 
 </div>
 
 <div class="footer">
