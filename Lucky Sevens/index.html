@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lucky Sevens</title>	
+
+    <!-- Latest compiled and minified CSS--> 
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+
+    <!-- Optional theme 
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    
+    </script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+
+    </script>
+
+    <script src="luckysevens.js"></script>
+
+</head>
+
+<body>
+
+<h1>Lucky Sevens</h1>
+
+<br />
+<div class="container">
+    <form id="startingBetForm" onsubmit="return validateItems() && rollDice()" class="form-inline">
+        <div class="form-group">
+            <label for="startingBet">Starting Bet: $</label>
+            <input type="text" class="form-control" id="startingBet" required/><br /><br />
+            <button type="submit" id="submitButton" class="btn btn-default">Play</button>
+        </div>
+
+    </form>
+
+    <p id="roll">text</p>
+</div>
+
+</body>
+</html>
+
+
+<!--///////
+
+<div id="contact-form">
+
+    <form action="submit.html" method="POST">
+        <div class="form-group">
+            <label for="name" style="font-weight: bold;">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email" style="font-weight: bold;">Email:</label>
+            <input type="text" class="form-control" id="email" name="email" required>
+        </div>  
+        <div class="form-group">
+            <label for="phone" style="font-weight: bold;">Phone:</label>
+            <input type="text" class="form-control" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="reason" style="font-weight: normal">Reason for Inquiry:</label>
+                <select id="reason" class="form-control" name="reason">
+                    <option value="default" selected>Catering</option>
+                    <option value="privateParty">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+        </div>
+
+        <div class="form-group">
+            <label for="additionalInfo" style="font-weight: normal">Additional Information:</label>
+            <textarea id="additionalInfo" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="haveYouBeen" style="font-weight: normal">Have you been to the restaurant?</label>
+        </div>
+        <div class="radio-inline">
+            <input type="radio" id="choice1" name="haveYouBeen" value="yes">
+            <label for="choice1" style="font-weight: normal">Yes</label>
+        </div>
+        <div class="radio-inline">
+            <input type="radio" id="choice2" name="haveYouBeen" value="no">
+            <label for="choice2" style="font-weight: normal">No</label>
+        </div>
+        <br />
+        <br />
+        
+        <div class="form-group">
+            <label for="bestDays" style="font-weight: normal">Best days to contact you:</label>
+        </div>
+        <div class="checkbox-inline">
+            <input type="checkbox" id="m" name="bestDays" value="m">
+            <label for="m" style="font-weight: normal">M</label>
+        </div>
+        <div class="checkbox-inline">
+            <input type="checkbox" id="t" name="bestDays" value="t">
+            <label for="t" style="font-weight: normal">T</label>  
+        </div>
+        <div class="checkbox-inline">
+            <input type="checkbox" id="w" name="bestDays" value="w">
+            <label for="w" style="font-weight: normal">W</label>
+        </div>
+        <div class="checkbox-inline">
+            <input type="checkbox" id="th" name="bestDays" value="th">
+            <label for="th" style="font-weight: normal">Th</label>
+        </div>
+        <div class="checkbox-inline">
+            <input type="checkbox" id="f" name="bestDays" value="f">
+            <label for="f" style="font-weight: normal">F</label>
+        </div>
+        <br />
+        <br />  
+        <input type="submit" name="submit" value="Send Request">
+    </form>
+
+</div>-->
