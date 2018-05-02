@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>My Weather</title>	
+        <link href="css/bootstrap.css"
+              rel="stylesheet">
+        
+	</head>
+	<body>
+
+    <div class="page-header">
+
+        <h1 class="text-center">Weather Page</h1>
+
+    </div>
+
+    <div id="weatherForm">
+
+        <form class="form-inline text-center" role="form" id="weather-form">
+
+        
+            <label for="zip-code" class="control-label">
+                Zip Code:
+            </label>
+
+
+            <input type="text"
+                    class="form-control"
+                    id="zip-code"
+                    placeholder="Zip Code" required/>
+                    
+            
+            <label for="units" class="control-label">
+                Units:
+            </label>
+
+            
+            <select class="form-control"
+                    id="units"/>
+                    <option value="imperial">Imperial</option>
+                    <option value="metric">Metric</option>
+            </select>
+
+            <button type="button"
+                id="get-weather"
+                class="btn btn-default">
+            Get Weather
+            </button>
+                
+        </form>
+
+    </div>
+
+
+    <div id="currentConditions" style="display: none">
+
+        <h2 id="inCity">Current Conditions in cityName</h2>
+
+        <div class="row">
+
+            <div id="mainWeatherDiv" class="col-md-4">
+                <!--TBD-->
+            </div>
+
+            <div id="currentConditionsDiv" class="col-md-4">
+                <table id="currentConditionsTable" class="col-md-4">
+                <tbody id="contentRows"></tbody>
+                </table>
+            </div>
+
+        </div>
+
+                
+
+
+
+    </div>
+
+
+
+    <div id="fiveDay" style="display: none">
+            
+        <h2>Five Day Forecast</h2>
+
+    </div>
+
+	
+        <!-- #5: Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/home.js"></script>
+        
+	</body>
+</html>
