@@ -14,7 +14,9 @@
 
     </div>
 
-    <div id="weatherForm">
+    <ul class="list-group" id="errorMessages"></ul>
+
+    <div id="weatherForm" class="page-header">
 
         <form class="form-inline text-center" role="form" id="weather-form">
 
@@ -27,7 +29,8 @@
             <input type="text"
                     class="form-control"
                     id="zip-code"
-                    placeholder="Zip Code" required/>
+                    placeholder="Zip Code" 
+                    pattern="[0-9]{5}" required />
                     
             
             <label for="units" class="control-label">
@@ -52,11 +55,11 @@
     </div>
 
 
-    <div id="currentConditions" style="display: none">
+    <div id="currentConditions" style="display: none" class="page-header">
 
         <h2 id="inCity">Current Conditions in cityName</h2>
 
-        <div class="row">
+        <div class="row" id="currentConditionsRow">
 
             <div id="mainWeatherDiv" class="col-md-4">
                 <!--TBD-->
@@ -78,9 +81,51 @@
 
 
 
-    <div id="fiveDay" style="display: none">
+    <div id="fiveDay" style="display: none" class="page-header">
             
         <h2>Five Day Forecast</h2>
+        <div class="row" style="margin: auto" id="fiveDayRow">
+            <div id="day1" class="col-md-2">
+                <table id="day1Table">
+                    <tbody id="day1Rows"></tbody>
+
+                </table>
+
+            </div>
+            <div id="day2" class="col-md-2">
+                    <table id="day2Table">
+                        <tbody id="day2Rows"></tbody>
+        
+                    </table>
+
+            </div>
+
+            <div id="day3" class="col-md-2">
+                    <table id="day3Table">
+                        <tbody id="day3Rows"></tbody>
+        
+                    </table>
+
+            </div>
+
+            <div id="day4" class="col-md-2">
+                    <table id="day4Table">
+                            <tbody id="day4Rows"></tbody>
+        
+                        </table>
+
+            </div>
+
+            <div id="day5" class="col-md-2">
+                    <table id="day5Table">
+                            <tbody id="day5Rows"></tbody>
+        
+                        </table>
+
+            </div>
+            
+
+        </div>
 
     </div>
 
