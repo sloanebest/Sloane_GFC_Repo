@@ -13,23 +13,23 @@ $(document).ready(function () {
 
     var tempLabel;
 
-    if (units == 'imperial') {
-        tempLabel = 'F';
-    }
-    
-    if (units == 'metric') {
-        tempLabel = 'C';
-    }
+        if (units == 'imperial') {
+            tempLabel = 'F';
+        }
+        
+        if (units == 'metric') {
+            tempLabel = 'C';
+        }
 
     var windLabel;
 
-    if (units == 'imperial') {
-        windLabel = 'mph';
-    }
+        if (units == 'imperial') {
+            windLabel = 'mph';
+        }
 
-    if (units == 'metric') {
-        windLabel = 'kph';
-    }
+        if (units == 'metric') {
+            windLabel = 'kph';
+        }
 
         $.ajax({
             type: 'GET',
@@ -66,9 +66,9 @@ $(document).ready(function () {
 
             },
             error: function() {
-                $('#errorMessages').append($('<li>')
+                $('#errorMessages').append('<li>')
                 .attr({class: 'list-group-item list-group-item-danger'})
-                .text('Error calling web service.  Please try again later.'));
+                .text('Error calling web service.  Please try again later.');
             }
         })
 
@@ -85,9 +85,6 @@ $(document).ready(function () {
                 $('#day4Rows').empty();
                 $('#day5Rows').empty();
                 $('#fiveDay').hide(); 
-                //var day1Rows = $('#day1Rows')
-
-                //var daysArray = [weatherData.list];
 
                 //day 1
 
@@ -209,7 +206,7 @@ $(document).ready(function () {
 
 function validateZipCode(zipCodeEntry) {
     $('#errorMessages').empty();
-    if (zipCodeEntry.length < 5) {
+    if (zipCodeEntry.length != 5) {
         $('#errorMessages').append($('<li>').attr({ class: 'list-group-item list-group-item-danger' }).text('Zip code: Please enter a 5-digit zip code'));
         $('#currentConditions').hide();
         $('#fiveDay').hide();
